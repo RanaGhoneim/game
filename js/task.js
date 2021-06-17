@@ -97,7 +97,7 @@ for (var i = 0 ; i < choose.length; i++) {
  for (var i = 0 ; i < choose2.length; i++) {
     choose2[i].addEventListener('click' ,function(e){
       var x = e.target.innerText;
-      if(x=='2'){
+      if(x=='3'){
         question2.innerHTML= e.target.innerText;
         questionImage2.style.opacity=".5";
         right.play();
@@ -111,7 +111,7 @@ for (var i = 0 ; i < choose.length; i++) {
  for (var i = 0 ; i < choose3.length; i++) {
     choose3[i].addEventListener('click' ,function(e){
       var x = e.target.innerText;
-      if(x=='2'){
+      if(x=='5'){
         question3.innerHTML= e.target.innerText;
         questionImage3.style.opacity=".5";
         right.play();
@@ -125,7 +125,7 @@ for (var i = 0 ; i < choose.length; i++) {
  for (var i = 0 ; i < choose4.length; i++) {
     choose4[i].addEventListener('click' ,function(e){
       var x = e.target.innerText;
-      if(x=='2'){
+      if(x=='4'){
         question4.innerHTML= e.target.innerText;
         questionImage4.style.opacity=".5";
         right.play();
@@ -139,7 +139,7 @@ for (var i = 0 ; i < choose.length; i++) {
  for (var i = 0 ; i < choose5.length; i++) {
     choose5[i].addEventListener('click' ,function(e){
       var x = e.target.innerText;
-      if(x=='2'){
+      if(x=='1'){
         question5.innerHTML= e.target.innerText;
         questionImage5.style.opacity=".5";
         right.play();
@@ -154,19 +154,19 @@ for (var i = 0 ; i < choose.length; i++) {
 
  //showAns
  function showAns(){
-    question5.innerHTML= "2";
+    question5.innerHTML= "1";
     questionImage5.style.opacity=".5";
 
-    question3.innerHTML= 2;
+    question3.innerHTML= "5";
     questionImage3.style.opacity=".5";
 
     question1.innerHTML= 2;
     questionImage1.style.opacity=".5";
   
-    question2.innerHTML= 2;
+    question2.innerHTML= '3';
     questionImage2.style.opacity=".5"
 
-    question4.innerHTML= 2;
+    question4.innerHTML= "4";
     questionImage4.style.opacity=".5"
  }
 
