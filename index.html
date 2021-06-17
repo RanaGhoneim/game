@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="./css/page.css">
+</head>
+
+<body>
+
+    <div class="loader">
+        <img src="image/Preloader_2.gif" alt="preload">
+    </div>
+    <section>
+        <div class="container">
+
+            <header class="d-flex align-items-center">
+                <div class="pr-2 ">
+                    <audio src="./image/p21e4.mp3" id="audio_Title"> </audio>
+                    <img src="./image/audio_icon.png" id="audio_icon" onclick="playAudio()" alt="">
+                </div>
+                <h1>Listen and number. Then ask and answer.</h1>
+            </header>
+
+            <div class="parent">
+                <div class="child">
+
+                    <div class="question">
+                        <div class="question__image">
+                            <img id="question-image1" src="./image/p21e4q1_1.png" alt="question1">
+                        </div>
+                        <div class="dropDown">
+                            <div class="dropDown__box1">
+                                <p class="dropDown__box_number question1-choose">5</p>
+                                <p class="dropDown__box_number question1-choose ">4</p>
+                                <p class="dropDown__box_number question1-choose">3</p>
+                                <p class="dropDown__box_number question1-choose">2</p>
+                                <p class="dropDown__box_number question1-choose">1</p>
+                            </div>
+                            <div class="answer" id="question1"></div>
+                        </div>
+                    </div>   
+
+
+                    <div class="question">
+                        <div class="question__image">
+                            <img id="question-image2" src="./image/p21e4q1_2.png" alt="question1">
+                        </div>
+                        <div class="dropDown">
+                            <div class="dropDown__box2">
+                                <div class="dropDown__box_number question2-choose">5</div>
+                                <div class="dropDown__box_number question2-choose" >4</div>
+                                <div class="dropDown__box_number question2-choose">3</div>
+                                <div class="dropDown__box_number question2-choose">2</div>
+                                <div class="dropDown__box_number question2-choose">1</div>
+                            </div>
+                            <div class="answer" id="question2"></div>
+                        </div>
+                    </div>   
+                     
+
+                    <div class="question">
+                        <div class="question__image">
+                            <img id="question-image3" src="./image/p21e4q1_3.png" alt="question1">
+                        </div>
+                        <div class="dropDown">
+                            <div class="dropDown__box3">
+                                <div class="dropDown__box_number question3-choose">5</div>
+                                <div class="dropDown__box_number question3-choose">4</div>
+                                <div class="dropDown__box_number question3-choose">3</div>
+                                <div class="dropDown__box_number question3-choose">2</div>
+                                <div class="dropDown__box_number question3-choose">1</div>
+                            </div>
+                            <div class="answer" id="question3"></div>
+                        </div>
+                    </div>   
+
+
+                    <div class="question">
+                        <div class="question__image">
+                            <img id="question-image4" src="./image/p21e4q1_4.png" alt="question1">
+                        </div>
+                        <div class="dropDown">
+                            <div class="dropDown__box4">
+                                <div class="dropDown__box_number question4-choose">5</div>
+                                <div class="dropDown__box_number question4-choose">4</div>
+                                <div class="dropDown__box_number question4-choose">3</div>
+                                <div class="dropDown__box_number question4-choose">2</div>
+                                <div class="dropDown__box_number question4-choose">1</div>
+                            </div>
+                            <div class="answer" id="question4"></div>
+                        </div>
+                    </div>   
+                    
+
+
+                    <div class="question">
+                        <div class="question__image">
+                            <img id="question-image5" src="./image/p21e4q1_5.png" alt="question1">
+                        </div>
+                        <div class="dropDown">
+                            <div class="dropDown__box5">
+                                <div class="dropDown__box_number question5-choose">5</div>
+                                <div class="dropDown__box_number question5-choose">4</div>
+                                <div class="dropDown__box_number question5-choose">3</div>
+                                <div class="dropDown__box_number question5-choose ">2</div>
+                                <div class="dropDown__box_number question5-choose">1</div>
+                            </div>
+                            <div class="answer" id="question5"></div>
+                        </div>
+                    </div>   
+
+                </div>
+            </div>
+
+            <footer class="py-3 pl-3 d-flex align-items-center">
+                <img src="./image/replay_icon.png" id="replay-btn" onclick="replay()" alt="">
+
+                <div class="controlsinline d-flex align-items-center">
+                    <img src="./image/play.png" id="play" alt="">
+                    <input type="range" class="form-range " id="range" value="0" min="0" id="customRange1">
+                </div>
+
+                <img src="./image/showAns_icon.png " id="showAns-btn" onclick="showAns()" alt="">
+            </footer>
+
+
+            <audio src="./js/right.aac" id="right"></audio>
+            <audio src="./js/mistake.aac" id="mistake"></audio>
+
+        </div>
+    </section>
+</body>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/task.js"></script>
+
+</html>
